@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Three.js</title>
+  </head>
+  <body>
+    <main id="app">
+      <nav>
+        <button id="prev" class="arrow"><p>&larr; Prev</p></button>
+        <div id="planets">
+
+        </div>
+        <button id="next" class="arrow"><p>Next &rarr;</p></button>
+      </nav>
+
+      <div class="info">
+        <h2>About</h2>
+        <p class="name"></p>
+        <p><span class="el">Diameter : </span><span class="diameter elI"></span><span> km</span></p>
+        <p><span class="el">Distance to sun : </span><span class="distance elI"></span> km</p>
+        <p><span class="el">Rotation speed : </span><span class="rotation elI"></span> km/h</p>
+      </div>
+      <canvas id="bg"></canvas>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+    <script type="module" src="./src/threejs.ts"></script>
+  </body>
+</html>
